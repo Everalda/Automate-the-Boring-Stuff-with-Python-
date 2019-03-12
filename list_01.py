@@ -3,4 +3,8 @@
 spam = ['cat','dog','rat', 'elephant']
 
 print(spam[0])
+print(spam[1:3])
+print(spam[-1])
 
+del spam[2]
+print(spam)
