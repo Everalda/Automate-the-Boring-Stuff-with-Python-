@@ -8,3 +8,9 @@ print(spam[-1])
 
 del spam[2]
 print(spam)
+
+
+if ('cat' in spam):
+	print("cat is in the spam")
+else:
+	print("cat is not in spam")
