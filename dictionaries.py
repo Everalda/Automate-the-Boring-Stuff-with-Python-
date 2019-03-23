@@ -77,9 +77,11 @@ message = "The quick brown fox jumped over the lazy dog"
 count = {}
 
 for char in message.upper():
+    #if there is no value set it to zero
     count.setdefault(char, 0)
+    #count the quantity of elements in the message
     count[char] = count[char]+1
 pprint.pprint(count)
-
+#use pprint to order the elements
 text = pprint.pformat(count)
 print(text)
