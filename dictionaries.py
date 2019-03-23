@@ -55,11 +55,11 @@ for i in eggs.items():
 if('cat' in eggs.values()):
     print("Cat is in dictiornary eggs")
 
-#return value for a key or return another value with get method
+#return value for a key or return default value with get method
 
-print(eggs.get('age', 0))
+print(eggs.get('age', 0)) # return 8, if there is no age key it returns 0
 
-print(eggs.get('color',''))
+print(eggs.get('color','')) # returns '' because there is no color in eggs
 
 picniqItems ={ 'apples': 5, 'cups': 5}
 print("I am bringing "+ str(picniqItems.get('napkins', 0))+ " to the picnic")
